@@ -1,9 +1,9 @@
 # cucumber-e2e
 
-*Installing Cypress via `yarn`:*
+**Installing Cypress via `yarn`:**
 
-yarn add cypress --dev
+`yarn add cypress --dev`
 
-*Run Cypress:*
+**Run Cypress:**
 
-yarn run cypress open
+`yarn run cypress open`
