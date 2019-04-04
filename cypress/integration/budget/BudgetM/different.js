@@ -17,6 +17,9 @@ When(`I add an item to budget`, () => {
       .type('320')
   cy
       .get('.submit').click()
+});
+
+Then(`I should see total result when the item was added`,() => {
   cy
       .get(':nth-child(7) > .MBPvA > ._3-t-g')
       .should('have.text', '-$320.00')
@@ -36,6 +39,9 @@ When(`I edit Paycheck item`, () => {
       .type('6700')
   cy
       .get('tbody > ._3Tz1l > td > form > :nth-child(4) > .submit').click()
+});
+
+Then(`I should see total result when the item was edited`,() => {
   cy
       .get(':nth-child(6) > ._3XkHf > ._3-t-g')
       .should('have.text', '$6,700.00')
@@ -51,6 +57,10 @@ When(`I delete Rent item`, () => {
       .get('.delete').click()
   cy
       .get('.opmhI').should('not.have.text', 'Rent')
+});
+
+Then(`I should see total result when the item was deleted`,() => {
+
   cy
       .get(':nth-child(5) > ._3S2Fs > .sG1fB')
       .should('have.text', '$3,213.93')
