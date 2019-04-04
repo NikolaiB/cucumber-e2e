@@ -1,0 +1,18 @@
+{
+  "name": "budget-cypress-cucumber",
+  "version": "1.0.0",
+  "description": "Budget cypress with cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "dependencies": {
+    "cypress": "^3.1.3",
+    "cypress-cucumber-preprocessor": "~1.8.0"
+  },
+
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
