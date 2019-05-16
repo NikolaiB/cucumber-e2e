@@ -7,10 +7,10 @@ Given(`I visit Springboard Retail website`, () => {
 });
 
 When(`I navigate to careers page`, () => {
-    cy.get('#hs_menu_wrapper_module_146251941106411362 > ul > :nth-child(3)').
-    focused().click()
+    cy.contains('Career').
+    click()
 });
 
 Then(`a QA Engineer position should be listed`, () => {
-    cy.contains(`QA Engineer`)
+    cy.should('have.text', 'QA Engineer')
 });
