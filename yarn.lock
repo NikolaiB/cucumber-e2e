@@ -1715,6 +1715,18 @@ cucumber-expressions@^6.0.1:
   dependencies:
     becke-ch--regex--s0-0-v1--base--pl--lib "^1.2.0"
 
+cucumber-html-reporter@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/cucumber-html-reporter/-/cucumber-html-reporter-4.0.5.tgz#8d6b376fa1d11e31467d482fd32a25a4671ce047"
+  integrity sha512-fhIIvna2KwxEq9XxAkbfPodY1ZBvtIos8fD5ZwaK9mrmpBBVcEfmE9CwERyWcaDpIXvJfo1nQTZanMjG9/xc8Q==
+  dependencies:
+    find "^0.2.7"
+    fs-extra "^3.0.1"
+    js-base64 "^2.3.2"
+    jsonfile "^3.0.0"
+    lodash "^4.17.5"
+    opn "5.3.0"
+
 cucumber-tag-expressions@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/cucumber-tag-expressions/-/cucumber-tag-expressions-1.1.1.tgz#7f5c7b70009bc2b666591bfe64854578bedee85a"
@@ -1754,10 +1766,10 @@ cucumber@^4.2.1:
     util-arity "^1.0.2"
     verror "^1.9.0"
 
-cypress-cucumber-preprocessor@~1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/cypress-cucumber-preprocessor/-/cypress-cucumber-preprocessor-1.8.0.tgz#45806fa0e66a022d7f3682438c6d20464176f29f"
-  integrity sha512-eRc8yVZJmIuvcn5D5YOKFIlDbMe+ldcs/GYqX8DHqpdfASvWzSg48WpTTvMndiQp90Gf18gbKTDRrcXexYlzmQ==
+cypress-cucumber-preprocessor@^1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/cypress-cucumber-preprocessor/-/cypress-cucumber-preprocessor-1.11.0.tgz#bad39f372ce1a8ae429922b1d3d02ddb8ad10011"
+  integrity sha512-7cEISZVphNcRqOenUB33PlbyppqDyGX7K/sCzrAqNEg91W9Uw9Sq/Dzh7ijzMSracAWa+QKhGNgf7oonCBVNXQ==
   dependencies:
     "@cypress/browserify-preprocessor" "^1.1.2"
     chai "^4.1.2"
@@ -1771,7 +1783,7 @@ cypress-cucumber-preprocessor@~1.8.0:
     glob "^7.1.2"
     through "^2.3.8"
 
-cypress@^3.1.3:
+cypress@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/cypress/-/cypress-3.2.0.tgz#c2d5befd5077dab6fb52ad70721e0868ac057001"
   integrity sha512-PN0wz6x634QyNL56/voTzJoeScDfwtecvSfFTHfv5MkHuECVSR4VQcEZTvYtKWln3CMBMUkWbBKPIwwu2+a/kw==
@@ -2268,6 +2280,13 @@ fill-range@^4.0.0:
     repeat-string "^1.6.1"
     to-regex-range "^2.1.0"
 
+find@^0.2.7:
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/find/-/find-0.2.9.tgz#4b73f1ff9e56ad91b76e716407fe5ffe6554bb8c"
+  integrity sha1-S3Px/55WrZG3bnFkB/5f/mVUu4w=
+  dependencies:
+    traverse-chain "~0.1.0"
+
 for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -2317,6 +2336,15 @@ fs-extra@7.0.0:
   dependencies:
     graceful-fs "^4.1.2"
     jsonfile "^4.0.0"
+    universalify "^0.1.0"
+
+fs-extra@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-3.0.1.tgz#3794f378c58b342ea7dbbb23095109c4b3b62291"
+  integrity sha1-N5TzeMWLNC6n27sjCVEJxLO2IpE=
+  dependencies:
+    graceful-fs "^4.1.2"
+    jsonfile "^3.0.0"
     universalify "^0.1.0"
 
 fs-minipass@^1.2.5:
@@ -2870,6 +2898,11 @@ is-windows@^1.0.2:
   resolved "https://registry.yarnpkg.com/is-windows/-/is-windows-1.0.2.tgz#d1850eb9791ecd18e6182ce12a30f396634bb19d"
   integrity sha512-eXK1UInq2bPmjyX6e3VHIzMLobc4J94i4AWn+Hpq3OU5KkrRC96OAcR3PRJ/pGu6m8TRnBHP9dkXQVsT/COVIA==
 
+is-wsl@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/is-wsl/-/is-wsl-1.1.0.tgz#1f16e4aa22b04d1336b66188a66af3c600c3a66d"
+  integrity sha1-HxbkqiKwTRM2tmGIpmrzxgDDpm0=
+
 isarray@1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
@@ -2901,6 +2934,11 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
+
+js-base64@^2.3.2:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.5.1.tgz#1efa39ef2c5f7980bb1784ade4a8af2de3291121"
+  integrity sha512-M7kLczedRMYX4L8Mdh4MzyAMM9O5osx+4FcOQuTvr3A9F2D9S5JXheN0ewNbrvK2UatkTRhL5ejGmGSjNMiZuw==
 
 js-levenshtein@^1.1.3:
   version "1.1.6"
@@ -3107,7 +3145,7 @@ lodash.once@^4.1.1:
   resolved "https://registry.yarnpkg.com/lodash.once/-/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
   integrity sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=
 
-lodash@4.17.11, lodash@^4.14.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4:
+lodash@4.17.11, lodash@^4.14.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.17.5:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
@@ -3515,6 +3553,13 @@ onetime@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/onetime/-/onetime-1.1.0.tgz#a1f7838f8314c516f05ecefcbc4ccfe04b4ed789"
   integrity sha1-ofeDj4MUxRbwXs78vEzP4EtO14k=
+
+opn@5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/opn/-/opn-5.3.0.tgz#64871565c863875f052cfdf53d3e3cb5adb53b1c"
+  integrity sha512-bYJHo/LOmoTd+pfiYhfZDnf9zekVJrY+cnS2a5F2x+w5ppvTqObojTP7WiFG+kVZs9Inw+qQ/lw7TroWwhdd2g==
+  dependencies:
+    is-wsl "^1.1.0"
 
 ora@^0.2.3:
   version "0.2.3"
@@ -4492,6 +4537,11 @@ tough-cookie@~2.4.3:
   dependencies:
     psl "^1.1.24"
     punycode "^1.4.1"
+
+traverse-chain@~0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/traverse-chain/-/traverse-chain-0.1.0.tgz#61dbc2d53b69ff6091a12a168fd7d433107e40f1"
+  integrity sha1-YdvC1Ttp/2CRoSoWj9fUMxB+QPE=
 
 trim-right@^1.0.1:
   version "1.0.1"
