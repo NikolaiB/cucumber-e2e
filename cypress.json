@@ -1,3 +1,4 @@
 {
-  "reporter": "reporters/custom.js"
+  "reporter": "reporters/custom.js",
+  "chromeWebSecurity": false
 }

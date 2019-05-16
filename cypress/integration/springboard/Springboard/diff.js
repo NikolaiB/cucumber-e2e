@@ -7,10 +7,9 @@ Given(`I visit Springboard Retail website`, () => {
 });
 
 When(`I navigate to careers page`, () => {
-    cy.contains('Career').
-    click()
+    cy.contains('Career').click()
 });
 
 Then(`a QA Engineer position should be listed`, () => {
-    cy.should('have.text', 'QA Engineer')
+    cy.contains('QA Engineer')
 });
