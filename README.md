@@ -9,3 +9,5 @@
 **Run Cypress:**
 
 `yarn run cypress open`
+
+`run Springboard.feature`
